@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #1d3557, #457b9d, #a8dadc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+
+.phone {
+    width: 320px;
+    height: 640px;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #24bf14, #292929);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7), inset 0px 3px 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screen {
+    width: 280px;
+    height: 620px;
+    background: linear-gradient(145deg, #0a31f3, #794747);
+    border-radius: 20px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.6), inset 0px -4px 8px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    background: linear-gradient(145deg, #4338ca, #3730a3);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 18px 85px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3), inset 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button-login {
+    background: linear-gradient(145deg, #ff416c, #ff4b2b);
+}
+
+.button-login:hover {
+    background: linear-gradient(145deg, #ff7b5e, #ff416c);
+}
+
+.button-settings {
+    background: linear-gradient(145deg, #00c6ff, #0072ff);
+}
+
+.button-settings:hover {
+    background: linear-gradient(145deg, #66dfff, #33a6ff);
+}
+
+.button-information {
+    background: linear-gradient(145deg, #00ff85, #009a50);
+}
+
+.button-information:hover {
+    background: linear-gradient(145deg, #66ffb0, #33cc80);
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.input-field {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select.input-field {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M8 12L2 6h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    cursor: pointer;
+}
+
+.start-button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #10b981;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #059669;
+}
+
+/* Existing phone and screen styles if needed */
+.phone {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #1f2937;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    width: 150px;
+    margin: 20px 0;
+}
+
+.wallet-section {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.wallet-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.crypto-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.wallet-label {
+    color: #ffd700;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.wallet-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.wallet-input {
+    flex-grow: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+}
+
+.copy-btn {
+    padding: 12px 20px;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #3182ce;
+}
+
+.payment-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #48bb78;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.payment-btn:hover {
+    background-color: #38a169;
+}

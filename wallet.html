@@ -1,0 +1,57 @@
+<html lang="en"><head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Zero 2.0 ROBOT</title>
+    <link rel="stylesheet" href="styles.css">
+     </style>
+
+<body>
+    <div class="phone">
+        <div class="screen">
+            <h1>Alpha Zero 2.0</h1>
+            <img src="alpha_zero_logo1 .png" alt="Alpha Zero Logo" class="logo">
+            
+            <div class="wallet-section">
+                <div class="wallet-header">
+                    <img src="g2.png" alt="Bitcoin" class="crypto-icon">
+                    <div class="wallet-label">BTC deposit address</div>
+                </div>
+                <div class="wallet-input-container">
+                    <input type="text" class="wallet-input" value="bc1qd2n8duy0mncnjnqh07dxjzvj3m57zne04yz7ar" readonly>
+                    <button class="copy-btn" onclick="copyToClipboard('btc')">Copy</button>
+                </div>
+            </div>
+
+            <div class="wallet-section">
+                <div class="wallet-header">
+                    <img src="tether-usdt-logo.png" alt="USDT" class="crypto-icon">
+                    <div class="wallet-label">USDT deposit address</div>
+                </div>
+                <div class="wallet-input-container">
+                    <input type="text" class="wallet-input" value="TDwUT1ihdaEKr4NUafuvk6rSjiWnPthLsz" readonly>
+                    <button class="copy-btn" onclick="copyToClipboard('usdt')">Copy</button>
+                </div>
+            </div>
+
+            <form action="processing.html">
+                <button type="submit" class="payment-btn">I have made my Payment</button>
+            </form>
+
+            <h2 style="color: red; font-size:8px;">note:This is your deriv personal address </h2>
+        </div>
+        <div class="footer">
+            <p>© 2024 Alpha Zero Technologies</p>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(type) {
+            const input = type === 'btc' ? 
+                document.querySelectorAll('.wallet-input')[0] : 
+                document.querySelectorAll('.wallet-input')[1];
+            input.select();
+            document.execCommand('copy');
+            alert('Address copied to clipboard!');
+        }
+    </script>
+</body></html>
